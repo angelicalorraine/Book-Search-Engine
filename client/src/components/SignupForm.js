@@ -35,14 +35,14 @@ const SignupForm = () => {
         variables: { ...userFormData },
       });
 
+      Auth.login(data.addUser.token);
+
 
       if (error) {
         throw new Error('something went wrong!');
       }
 
-      const { token, user } = await data.json();
-      console.log(user);
-      Auth.login(token);
+
     } catch (err) {
       console.error(err);
       setShowAlert(true);
