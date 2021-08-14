@@ -88,7 +88,7 @@ const SearchBooks = () => {
 
   return (
     <>
-      <Jumbotron fluid className='text-light bg-success'>
+      <Jumbotron fluid className='text-light bg-info p-5'>
         <Container>
           <h1>Search for books!</h1>
           <Form onSubmit={handleFormSubmit}>
