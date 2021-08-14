@@ -20,6 +20,7 @@ const SignupForm = () => {
   };
 
   const handleFormSubmit = async (event) => {
+    console.log(userFormData);
     event.preventDefault();
 
 
@@ -32,7 +33,9 @@ const SignupForm = () => {
 
     try {
       const { data } = await addUser({
+
         variables: { ...userFormData },
+
       });
 
       Auth.login(data.addUser.token);
