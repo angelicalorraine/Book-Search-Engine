@@ -11,8 +11,16 @@
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "cd client && npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelicalorraine/Book-Search-Engine.git"
+  },
+  "keywords": [
+    "heroku"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
