@@ -12,7 +12,7 @@ const AppNavbar = () => {
 
   return (
     <React.Fragment>
-      <Navbar bg='light' variant='light' expand='lg'>
+      <Navbar bg='dark' variant='dark' expand='lg'>
         <Container fluid>
           <Navbar.Brand as={Link} to='/'>
             Google Book Search
