@@ -5,9 +5,11 @@
   "proxy": "http://localhost:3001",
   "dependencies": {
     "@apollo/client": "^3.3.6",
+    "@apollo/react-hooks": "^4.0.0",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
+    "apollo-boost": "^0.4.9",
     "bootstrap": "^5.1.0",
     "express-jwt": "^6.1.0",
     "graphql": "^15.4.0",
