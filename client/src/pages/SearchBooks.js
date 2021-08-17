@@ -90,8 +90,8 @@ const SearchBooks = () => {
 
   return (
     <>
-      <Jumbotron fluid className='text-light bg-info'>
-        <Container>
+      <Jumbotron fluid className='text-light bg-info p-5 search 100vh'>
+        <Container className='p-5'>
           <h1>Search for Books!</h1>
           <Form onSubmit={handleFormSubmit}>
             <Form.Row>
@@ -106,7 +106,7 @@ const SearchBooks = () => {
                 />
               </Col>
               <Col xs={12} md={4}>
-                <Button type='submit' variant='dark' size='lg'>
+                <Button className='m-2' type='submit' variant='dark' size='lg'>
                   Submit Search
                 </Button>
               </Col>

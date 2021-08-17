@@ -1,5 +1,6 @@
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
 }
 
 h1,
@@ -8,10 +9,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: "Rubik Mono One", sans-serif;
 }
 
 .small {
   font-weight: 300;
   font-style: italic;
+}
+
+.search,
+.navi {
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+}
+
+.navi {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
