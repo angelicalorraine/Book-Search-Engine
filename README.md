@@ -13,11 +13,13 @@
 
 ## Description
 
-[Deployed App Results](https://angelicalorraine.github.io/)
+Provides the user with the ability to search for books using the Google Book Search API. A user may setup an account & save books to their account. The application allows users to save book searches.
 
-![Team Profile Results](assets/)
+[Deployed App Results](https://book-search-engine-alh.herokuapp.com/)
 
 ## Installaion
+
+The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API.
 
 ## Usage
 
