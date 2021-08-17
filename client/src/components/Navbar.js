@@ -11,11 +11,11 @@ const AppNavbar = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <>
-      <Navbar bg='dark' variant='dark' expand='lg'>
+    <React.Fragment>
+      <Navbar bg='light' variant='light' expand='lg'>
         <Container fluid>
           <Navbar.Brand as={Link} to='/'>
-            Google Books Search
+            Google Book Search
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
@@ -48,17 +48,18 @@ const AppNavbar = () => {
         <Tab.Container defaultActiveKey='login'>
           <Modal.Header closeButton>
             <Modal.Title id='signup-modal'>
-              <Nav variant='pills'>
-                <Nav.Item>
-                  <Nav.Link eventKey='login'>Login</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey='signup'>Sign Up</Nav.Link>
-                </Nav.Item>
-              </Nav>
+              Login
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
+            <Nav variant='pills' className="mb-4">
+              <Nav.Item>
+                <Nav.Link eventKey='login' className="btn-link">Login</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey='signup' className="btn-link">Sign Up</Nav.Link>
+              </Nav.Item>
+            </Nav>
             <Tab.Content>
               <Tab.Pane eventKey='login'>
                 <LoginForm handleModalClose={() => setShowModal(false)} />
@@ -70,7 +71,7 @@ const AppNavbar = () => {
           </Modal.Body>
         </Tab.Container>
       </Modal>
-    </>
+    </React.Fragment>
   );
 };
 
