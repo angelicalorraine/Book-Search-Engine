@@ -17,6 +17,8 @@ Provides the user with the ability to search for books using the Google Book Sea
 
 [Deployed App Results](https://book-search-engine-alh.herokuapp.com/)
 
+![Book_Search](assets/googlebook.png)
+
 ## Installaion
 
 The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API.
