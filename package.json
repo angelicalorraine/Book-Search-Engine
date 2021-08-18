@@ -1,31 +1,21 @@
 {
   "name": "googlebooks-app",
   "version": "1.0.0",
-  "description": "application for searching google books API and saving to your account",
+  "description": "",
   "main": "server/server.js",
-  "engines": {
-    "npm": "7.20.6"
-  },
   "scripts": {
     "start": "node server/server.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/angelicalorraine/Book-Search-Engine.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
   },
-  "bugs": {
-    "url": "https://github.com/angelicalorraine/Book-Search-Engine/issues"
-  },
-  "homepage": "https://github.com/angelicalorraine/Book-Search-Engine#readme",
   "dependencies": {
-    "dotenv": "^10.0.0"
+    "graphql": "^15.5.1"
   }
 }

@@ -28,6 +28,7 @@ const SearchBooks = () => {
 
   // create method to search for books and set state on form submit
   const handleFormSubmit = async (event) => {
+
     event.preventDefault();
 
     if (!searchInput) {
@@ -36,6 +37,7 @@ const SearchBooks = () => {
 
     try {
       const response = await searchGoogleBooks(searchInput);
+      console.log(response);
 
       if (!response.ok) {
         throw new Error('something went wrong!');
@@ -48,7 +50,7 @@ const SearchBooks = () => {
         authors: book.volumeInfo.authors || ['No author to display'],
         title: book.volumeInfo.title,
         description: book.volumeInfo.description,
-        image: book.volumeInfo.imageLinks?.thumbnail || '',
+        image: book.volumeInfo.imageLinks?.smallThumbnail || '',
       }));
 
       setSearchedBooks(bookData);
@@ -90,7 +92,7 @@ const SearchBooks = () => {
 
   return (
     <>
-      <Jumbotron fluid className='text-light bg-info p-5 search 100vh'>
+      <Jumbotron fluid className='text-light bg-info p-5 search'>
         <Container className='p-5'>
           <h1>Search for Books!</h1>
           <Form onSubmit={handleFormSubmit}>
